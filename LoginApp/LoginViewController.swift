@@ -10,8 +10,8 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
-    private let username = "user"
-    private let password = "pass"
+    private let username = "Alexey"
+    private let password = "Efimov"
     
     @IBOutlet var userNameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
@@ -35,11 +35,11 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func forgotUsernameAction() {
-        showAlert(title: "Don't forget :)", message: "Your username is: \(username) 😉")
+        showAlert(title: "Don't forget!", message: "Your username is: \(username)")
     }
     
     @IBAction func forgotPassAction() {
-        showAlert(title: "Don't forget :)", message: "Your password is: \(password) 😉")
+        showAlert(title: "Don't forget!", message: "Your password is: \(password)")
     }
     
     private func showAlert(title: String, message: String) {
